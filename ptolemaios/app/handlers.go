@@ -1,13 +1,11 @@
 package app
 
 import (
+	"context"
 	"encoding/json"
 	"github.com/kpango/glg"
 	"github.com/odysseia-greek/plato/aristoteles/configs"
-	"github.com/odysseia-greek/plato/middleware"
-	"github.com/odysseia-greek/plato/models"
 	pb "github.com/odysseia-greek/plato/proto"
-	"net/http"
 	"time"
 )
 
@@ -17,50 +15,32 @@ type PtolemaiosHandler struct {
 	pb.UnimplementedPtolemaiosServer
 }
 
-func (p *PtolemaiosHandler) GetSecretFromVault(w http.ResponseWriter, req *http.Request) {
+// GetSecret creates a 1 time token and returns the secret from vault
+func (p *PtolemaiosHandler) GetSecret(context.Context, *pb.VaultRequest) (*pb.ElasticConfigVault, error) {
 	oneTimeToken, err := p.getOneTimeToken()
 	if err != nil {
-		e := models.ValidationError{
-			ErrorModel: models.ErrorModel{UniqueCode: middleware.CreateGUID()},
-			Messages: []models.ValidationMessages{
-				{
-					Field:   "getToken",
-					Message: err.Error(),
-				},
-			},
-		}
-		middleware.ResponseWithJson(w, e)
-		return
+		return nil, err
 	}
 
 	glg.Debug("so far so good")
 	p.Config.Vault.SetOnetimeToken(oneTimeToken)
 	secret, err := p.Config.Vault.GetSecret(p.Config.PodName)
 	if err != nil {
-		e := models.ValidationError{
-			ErrorModel: models.ErrorModel{UniqueCode: middleware.CreateGUID()},
-			Messages: []models.ValidationMessages{
-				{
-					Field:   "getSecret",
-					Message: err.Error(),
-				},
-			},
-		}
-		middleware.ResponseWithJson(w, e)
-		return
+		return nil, err
 	}
 
-	var elasticModel models.ElasticConfigVault
+	var elasticModel pb.ElasticConfigVault
 	for key, value := range secret.Data {
 		if key == "data" {
 			j, _ := json.Marshal(value)
-			elasticModel, _ = models.UnmarshalSecretData(j)
+			err := json.Unmarshal(j, &elasticModel)
+			if err != nil {
+				return nil, err
+			}
 		}
 	}
 
-	middleware.ResponseWithJson(w, elasticModel)
-
-	return
+	return &elasticModel, nil
 }
 
 func (p *PtolemaiosHandler) getOneTimeToken() (string, error) {

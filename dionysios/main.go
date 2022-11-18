@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/kpango/glg"
+	"github.com/odysseia-greek/olympos/dionysios/app"
 	"github.com/odysseia-greek/plato/aristoteles"
 	"github.com/odysseia-greek/plato/aristoteles/configs"
-	"github.com/odysseia/dionysios/app"
 	"net/http"
 	"os"
 )
