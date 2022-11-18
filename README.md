@@ -11,10 +11,6 @@ The goal is for people to learn or rehearse ancient Greek. Some of it is in Dutc
   - [Herodotos - Ἡρόδοτος](#herodotos---ἡρόδοτος)
   - [Sokrates - Σωκράτης](#sokrates---σωκράτης)
   - [Solon - Σόλων](#solon---σόλων)
-- [Common](#common)
-  - [Aristoteles - Ἀριστοτέλης](#aristoteles---Ἀριστοτέλης)
-  - [Eratosthenes - Ἐρατοσθένης](#eratosthenes---ἐρατοσθένης)
-  - [Plato - Πλάτων](#plato---πλάτων)
 - [Dataseeders](#dataseeders)
   - [Anaximander - Ἀναξίμανδρος](#anaximander---ἀναξίμανδρος)
   - [Demokritos - Δημόκριτος](#demokritos---δημόκριτος)
@@ -23,21 +19,12 @@ The goal is for people to learn or rehearse ancient Greek. Some of it is in Dutc
   - [Thales - Θαλῆς](#thales---Θαλῆς)
 - [Docs](#docs)
   - [Ploutarchos - Πλούταρχος](#ploutarchos---πλούταρχος)
-- [Frontend](#frontend)
-  - [Pheidias - Φειδίας](#pheidias---φειδίας)
 - [Init](#init)
   - [Drakon - Δράκων](#drakon---δράκων)
   - [Periandros - Περίανδρος](#periandros---περίανδρος)
   - [Thrasyboulos - Θρασύβουλος](#thrasyboulos---Θρασύβουλος)
-- [Ops](#ops)
-  - [Archimedes - Ἀρχιμήδης](#archimedes---ἀρχιμήδης)
-  - [Lykourgos - Λυκοῦργος](#lykourgos---λυκοῦργος)
-  - [Themistokles - Θεμιστοκλῆς](#themistokles---θεμιστοκλῆς)
 - [Sidecar](#sidecar)
-  - [Ptolemaios - Πτολεμαῖος](#ptolemaios---πτολεμαῖος)
-- [Tests](#tests)
-  - [Hippokrates - Ἱπποκράτης](#hippokrates---ἱπποκράτης)
-  - [Xerxes - Ξέρξης](#xerxes---ξέρξης)
+  - [Ptolemaios - Πτολεμαῖος](ptolemaios---πτολεμαῖος)
 
 ## Backend
 
@@ -80,28 +67,6 @@ Sokrates (on the right) is a figure of mythical propertions. He could stare at t
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Ignoto%2C_c.d._solone%2C_replica_del_90_dc_ca_da_orig._greco_del_110_ac._ca%2C_6143.JPG" alt="Solon" width="200"/>
 
 Solon is most famous for his role as the great Athenian lawgiver following the reforms made by Drakon. His laws laid the foundation of what would become the Athenian Democracy.
-
-## Common
-
-### Aristoteles - Ἀριστοτέλης
-
-Τριών δει παιδεία: φύσεως, μαθήσεως, ασκήσεως. -Education needs these three: natural endowment, study, practice.
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Aristotle_Altemps_Inv8575.jpg" alt="Aristoteles" width="200"/>
-
-Config builder for all api's, seeders and initcontainers.
-
-### Eratosthenes - Ἐρατοσθένης
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Eratosthene.01.png" alt="Eratosthenes" width="200"/>
-
-Holds fixtures for testing. Eratosthenes was one of the librarians of Alexandria. He is most famous for calculating the circumference of the earth.
-
-### Plato - Πλάτων
-
-χαλεπὰ τὰ καλά - good things are difficult to attain
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Platon.png" alt="Plato" width="200"/>
 
 ## Dataseeders
 
@@ -156,14 +121,6 @@ Famous as one of the firsts scientists of Western Europe, Thales of Miletos has 
 
 Ploutarchos (or Plutarch) is most well known for his Parallel Lives, a series of books where he compares a well known Roman to a Greek counterpart.
 
-## Frontend
-
-### Pheidias - Φειδίας
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Charles_B%C3%A9ranger_-_Replica_of_The_H%C3%A9micycle_-_Walters_3783.jpg" alt="Pheidias" width="400"/>
-
-Pheidias (or Phidias) is one of the great artists of the Greek world, most famous for his work on the Athenian Akropolis. An apt choice for the frontend of the app.
-
 ## Init
 
 ### Drakon - Δράκων
@@ -191,29 +148,6 @@ Tyrant of Corinth.
 
 Tyrant of Miletos in the 7th century. He was an ally of Periandros
 
-## Ops
-
-### Archimedes - Ἀρχιμήδης
-
-εὕρηκα - I found it!
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Archimedes_The_School_of_Athens.png" alt="Archimedes" width="200"/>
-
-Archimedes is one of the greatest mathematicians of all time. He is also known for some nifty inventions which is why his
-name has been chosen for the `ctl` tooling.
-
-### Lykourgos - Λυκοῦργος
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Lycurgus.jpg" alt="Lykourgos" width="200"/>
-
-Lykourgos (or Lycurgus) is a semi mythical lawmaker that laid the foundation for the Spartan society with strict rules. As a deployment abides by strict rules this is a great fit.
-
-### Themistokles - Θεμιστοκλῆς
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Illustrerad_Verldshistoria_band_I_Ill_116.png" alt="Themistokles" width="200"/>
-
-Themistokles is argueably the greatest Greek admiral. His victory at Salamis is most well-known. As an admiral he held sway over many ships and thus over many pilots (kubernetes).
-
 
 ## Sidecar
 
@@ -223,20 +157,3 @@ Themistokles is argueably the greatest Greek admiral. His victory at Salamis is 
 
 
 First Macedonian king of Egypt.
-
-## Tests
-
-### Hippokrates - Ἱπποκράτης
-
-ὄμνυμι Ἀπόλλωνα ἰητρὸν καὶ Ἀσκληπιὸν καὶ Ὑγείαν καὶ Πανάκειαν καὶ θεοὺς πάντας τε καὶ πάσας, ἵστορας ποιεύμενος, ἐπιτελέα ποιήσειν κατὰ δύναμιν καὶ κρίσιν ἐμὴν ὅρκον τόνδε καὶ συγγραφὴν τήνδε - I swear by Apollo Healer, by Asclepius, by Hygieia, by Panacea, and by all the gods and goddesses, making them my witnesses, that I will carry out, according to my ability and judgment, this oath and this indenture.
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hippocrates.jpg" alt="Hippokrates" width="200"/>
-
-
-The most well known medical professional in history. Hippokrates houses tests to see whether the other services are in good health.
-
-### Xerxes - Ξέρξης
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/64/National_Museum_of_Iran_Darafsh_%28785%29.JPG" alt="Xerxes" width="200"/>
-
-Xerxes was the Persian great king and invaded Greece during the second Greco-Persion war. He tested the Greeks with an army so great it was reported to drain rivers and shake the earth.

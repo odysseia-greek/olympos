@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/kpango/glg"
+	"github.com/odysseia-greek/olympos/ptolemaios/app"
 	"github.com/odysseia-greek/plato/aristoteles"
 	"github.com/odysseia-greek/plato/aristoteles/configs"
-	"github.com/odysseia/ptolemaios/app"
 	"google.golang.org/grpc"
 	"net"
 	"os"

@@ -1,4 +1,4 @@
-module github.com/odysseia
+module github.com/odysseia-greek/olympos
 
 go 1.18
 
